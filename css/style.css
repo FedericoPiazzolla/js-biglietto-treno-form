@@ -15,11 +15,26 @@ body {
 /* MAIN */
 .container {
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
 }
 
 /* MODULE */
 .module {
   margin: 4rem 0;
   display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  border-radius: 2rem;
+  background-color: salmon;
+}
+
+.input-item {
+  width: calc(100% / 3);
+  padding-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
