@@ -39,5 +39,10 @@ sendBtn.addEventListener("click", function(){
     totalPrice = (ticketPriceTotal - discount);
     console.log(totalPrice);
   }
-  
+
+  // Preparazione messaggio
+  const userNameTicket = (userName);
+
+  // Output
+  document.getElementById("name-user").innerHTML = userNameTicket
 })

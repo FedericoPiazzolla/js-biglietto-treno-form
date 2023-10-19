@@ -38,3 +38,24 @@ body {
   justify-content: center;
   width: 100%;
 }
+
+/* RESULT */
+.wrap-result {
+  background-color: salmon;
+  padding: 1.5rem;
+}
+
+.row {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.col1 {
+  width: 30%;
+  padding: 1rem;
+  background-color: green;
+}
+
+.col1 p {
+  font-size: 1.5rem;
+}
