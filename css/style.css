@@ -9,7 +9,7 @@ img {
 }
 
 body {
-  background-color: aqua;
+  background-color: purple;
 }
 
 .text-center {
@@ -32,12 +32,12 @@ body {
 
 /* MODULE */
 .module {
-  margin: 4rem 0;
+  margin: 8rem 0;
   display: flex;
   flex-wrap: wrap;
   padding: 3rem;
   border-radius: 2rem;
-  background-color: salmon;
+  background-color: rgb(232, 168, 237);
 }
 
 .input-item {
@@ -66,11 +66,12 @@ body {
 .col1 {
   width: 30%;
   padding: 1rem;
-  background-color: green;
+  background-color: gray;
 }
 
 .col1 p {
   font-size: 1.5rem;
+  color: purple;
 }
 
 .col2 {
@@ -88,4 +89,9 @@ table {
 
 th, td {
   padding-bottom: 2rem;
+}
+
+td {
+  font-size: 1rem;
+  color: purple;
 }

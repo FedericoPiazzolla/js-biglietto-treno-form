@@ -23,26 +23,38 @@ sendBtn.addEventListener("click", function(){
 
   let discount = "";
   let toalPrice = "";
+  let message = "";
 
   if (userAge === "over-65") {
     discount = (ticketPriceTotal / 100) * 40;
-    console.log(discount);
     totalPrice = (ticketPriceTotal - discount);
-    console.log(totalPrice);
+    message = "Biglietto agevolato over-65"
   } else if (userAge === "minorenne") {
     discount = (ticketPriceTotal / 100) * 20;
-    console.log(discount);
     totalPrice = (ticketPriceTotal - discount);
-    console.log(totalPrice);
+    message = "Biglietto agevolato under-18"
   } else {
     discount = 0
     totalPrice = (ticketPriceTotal - discount);
-    console.log(totalPrice);
+    message = "Biglietto standard"
   }
 
   // Preparazione messaggio
   const userNameTicket = (userName);
+  const priceOfTicket = (`${totalPrice.toFixed(2)}€`);
+  const userMessage = (message)
 
   // Output
-  document.getElementById("name-user").innerHTML = userNameTicket
-})
+  document.getElementById("name-user").innerHTML = userNameTicket;
+  document.getElementById("price-of-ticket").innerHTML = priceOfTicket;
+  document.getElementById("type-of-ticket").innerHTML = userMessage;
+});
+
+document.getElementById("clear").addEventListener("click", function () {
+  userNameElem.value = "";
+  userKmElem.value = "";
+  userAgeElem.value = "";
+  document.getElementById("name-user").innerHTML = "";
+  document.getElementById("price-of-ticket").innerHTML = "";
+  document.getElementById("type-of-ticket").innerHTML = "";
+});

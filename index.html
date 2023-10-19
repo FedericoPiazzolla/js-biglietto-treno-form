@@ -1,85 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <!-- my style -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <main>
-    <div class="container">
-      <!-- Domande -->
-      <section class="module">
-        <div class="input-item">
-          <label for="name">Nome e Cognome</label>
-          <input type="text" id="name">
-        </div>
-
-        <div class="input-item">
-          <label for="userkm">Km da percorrere</label>
-          <input type="number" id="userkm">
-        </div>
-
-        <div class="input-item">
-          <label for="age">Fascia d'età</label>
-          <select id="age">
-            <option value=""></option>
-            <option value="minorenne">minorenne</option>
-            <option value="maggiorenne">maggiorenne</option>
-            <option value="over-65">over-65</option>
-          </select>
-        </div>
-
-        <div class="buttons">
-        <button id="send">Genera</button>
-        <button id="clear">Annulla</button>
-        </div>
-      </section>
-      <!-- /Domande -->
-
-      <!-- Result -->
-      <section class="result-section hidden">
-        <div class="wrap-result">
-          <h2>DETTAGLI PASSEGGERI</h2>
-
-          <div class="row">
-            <!-- nominativo -->
-            <div class="col1">
-              <h2>NOME PASSEGGERO</h2>
-              <p id="name-user"></p>
-            </div>
-            <!-- /nominativo -->
-
-            <!-- dati ticket -->
-            <div class="col2">
-              <table>
-                <tr>
-                  <th class="text-left">Offerta</th>
-                  <th>Carrozza</th>
-                  <th>Codice CP</th>
-                  <th>Costo Biglietto</th>
-                </tr>
-
-                <tr>
-                  <td id="type-of-ticket"></td>
-                  <td class="text-center">5</td>
-                  <td class="text-center">89568</td>
-                  <td class="text-center" id="price-of-ticket"></td>
-                </tr>
-              </table>
-            </div>
-            <!-- dati ticket -->
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- Domande -->
+        <section class="module">
+          <div class="input-item">
+            <label for="name">Nome e Cognome</label>
+            <input type="text" id="name" />
           </div>
-          
-        </div>
-      </section>
-      <!-- /Result -->
-    </div>
-  </main>
-  <script src="js/script.js"></script>
-</body>
+
+          <div class="input-item">
+            <label for="userkm">Km da percorrere</label>
+            <input type="number" id="userkm" />
+          </div>
+
+          <div class="input-item">
+            <label for="age">Fascia d'età</label>
+            <select id="age">
+              <option value=""></option>
+              <option value="minorenne">minorenne</option>
+              <option value="maggiorenne">maggiorenne</option>
+              <option value="over-65">over-65</option>
+            </select>
+          </div>
+
+          <div class="buttons">
+            <button id="send">Genera</button>
+            <button id="clear">Annulla</button>
+          </div>
+        </section>
+        <!-- /Domande -->
+
+        <!-- Result -->
+        <section class="result-section hidden">
+          <div class="wrap-result">
+            <h2>DETTAGLI PASSEGGERI</h2>
+
+            <div class="row">
+              <!-- nominativo -->
+              <div class="col1">
+                <h2>NOME PASSEGGERO</h2>
+                <p id="name-user"></p>
+              </div>
+              <!-- /nominativo -->
+
+              <!-- dati ticket -->
+              <div class="col2">
+                <table>
+                  <tr>
+                    <th class="text-left">Offerta</th>
+                    <th>Carrozza</th>
+                    <th>Codice CP</th>
+                    <th>Costo Biglietto</th>
+                  </tr>
+
+                  <tr>
+                    <td id="type-of-ticket"></td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">89568</td>
+                    <td class="text-center" id="price-of-ticket"></td>
+                  </tr>
+                </table>
+              </div>
+              <!-- dati ticket -->
+            </div>
+          </div>
+        </section>
+        <!-- /Result -->
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>
