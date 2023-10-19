@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: aqua;
+}
+
+/* MAIN */
+.container {
+  margin: 0 auto;
+  width: 60%;
+}
+
+/* MODULE */
+.module {
+  margin: 4rem 0;
+  display: flex;
+}

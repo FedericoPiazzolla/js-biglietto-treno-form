@@ -11,35 +11,42 @@
 <body>
 
   <main>
-    <!-- Domande -->
-    <section class="module">
-      <div class="input-item">
-        <label for="name">Nome e Cognome</label>
-        <input type="text" id="name">
-      </div>
+    <div class="container">
+      <!-- Domande -->
+      <section class="module">
+        <div class="input-item">
+          <label for="name">Nome e Cognome</label>
+          <input type="text" id="name">
+        </div>
 
-      <div class="input-item">
-        <label for="userkm">Km da percorrere</label>
-        <input type="number" id="userkm">
-      </div>
+        <div class="input-item">
+          <label for="userkm">Km da percorrere</label>
+          <input type="number" id="userkm">
+        </div>
 
-      <div class="input-item">
-        <label for="age">Fascia d'età</label>
-        <select id="age">
-          <option value=""></option>
-          <option value="minorenne">minorenne</option>
-          <option value="maggiorenne">maggiorenne</option>
-          <option value="over-65">over-65</option>
-        </select>
-      </div>
+        <div class="input-item">
+          <label for="age">Fascia d'età</label>
+          <select id="age">
+            <option value=""></option>
+            <option value="minorenne">minorenne</option>
+            <option value="maggiorenne">maggiorenne</option>
+            <option value="over-65">over-65</option>
+          </select>
+        </div>
 
-      <div class="buttons">
-      <button id="send">Invia</button>
-      <button id="clear">Cancella</button>
-      </div>
-    </section>
-    <!-- /Domande -->
+        <div class="buttons">
+        <button id="send">Genera</button>
+        <button id="clear">Annulla</button>
+        </div>
+      </section>
+      <!-- /Domande -->
 
+      <!-- Result -->
+      <section class="result-section hidden">
+
+      </section>
+      <!-- /Result -->
+    </div>
   </main>
   <script src="js/script.js"></script>
 </body>
