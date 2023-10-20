@@ -12,7 +12,7 @@ sendBtn.addEventListener("click", function(){
 
   // Raccolta dati
   const userName = userNameElem.value;
-  const userKm = userKmElem.value;
+  const userKm = parseInt(userKmElem.value);
   const userAge = userAgeElem.value;
   console.log(userName, userKm, userAge);
 
@@ -21,7 +21,7 @@ sendBtn.addEventListener("click", function(){
   const ticketPriceTotal = ticketPriceKm * userKm;
   console.log(ticketPriceTotal.toFixed(2))
 
-  let discount = "";
+  let discount = 0;
   let toalPrice = "";
   let message = "";
 
@@ -34,7 +34,6 @@ sendBtn.addEventListener("click", function(){
     totalPrice = (ticketPriceTotal - discount);
     message = "Biglietto agevolato under-18"
   } else {
-    discount = 0
     totalPrice = (ticketPriceTotal - discount);
     message = "Biglietto standard"
   }
