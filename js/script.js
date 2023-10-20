@@ -50,7 +50,7 @@ sendBtn.addEventListener("click", function(){
   document.getElementById("type-of-ticket").innerHTML = userMessage;
 });
 
-document.getElementById("clear").addEventListener("click", function () {
+const clearBtn = document.getElementById("clear").addEventListener("click", function () {
   userNameElem.value = "";
   userKmElem.value = "";
   userAgeElem.value = "";
